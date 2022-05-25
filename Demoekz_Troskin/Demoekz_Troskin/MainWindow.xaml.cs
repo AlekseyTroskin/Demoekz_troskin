@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Demoekz_Troskin.AppDataFile;
+using Demoekz_Troskin.Pages;
 
 namespace Demoekz_Troskin
 {
@@ -23,6 +25,17 @@ namespace Demoekz_Troskin
         public MainWindow()
         {
             InitializeComponent();
+
+            FrameObj.frameMain = FrmMain;
+            FrmMain.Navigate(new PageMenu());
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (FrameObj.frameMain.CanGoBack)
+            {
+                FrameObj.frameMain.GoBack();
+            }
         }
     }
 }

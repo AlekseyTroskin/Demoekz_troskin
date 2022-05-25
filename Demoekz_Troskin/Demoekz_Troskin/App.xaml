@@ -4,6 +4,19 @@
              xmlns:local="clr-namespace:Demoekz_Troskin"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="6"/>
+        </Style>
+
+        <!-- Style for default Button-->
+        <Style TargetType="Button" x:Key="menuBtn">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
     </Application.Resources>
 </Application>

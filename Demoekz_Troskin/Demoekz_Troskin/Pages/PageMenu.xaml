@@ -1,0 +1,52 @@
+﻿<Page x:Class="Demoekz_Troskin.Pages.PageMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Demoekz_Troskin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMenu">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Button 
+                    Name="btnClient"
+                    Content="Клиенты"
+                    Style="{StaticResource menuBtn}"
+                    Click="btnClient_Click"/>
+                <Button 
+                    Name="btnModel"
+                    Content="Модели"
+                    Style="{StaticResource menuBtn}"
+                    Click="btnModel_Click"/>
+                <Button 
+                    Name="btnPostavchiki"
+                    Content="Поставщики"
+                    Click="btnPostavchiki_Click"
+                    Style="{StaticResource menuBtn}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button 
+                    Name="btnAddClient"
+                    Click="btnAddClient_Click"
+                    Content="Добавить клиента"
+                    Style="{StaticResource menuBtn}"/>
+                <Button 
+                    Name="btnAddModel"
+                    Content="Добавить модель"
+                    Style="{StaticResource menuBtn}"
+                    Click="btnAddModel_Click"/>
+                <Button 
+                    Name="btnAddPostavchik"
+                    Content="Добавить поставщика"
+                    Style="{StaticResource menuBtn}"
+                    Click="btnAddPostavchik_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>
